@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Energy Forecasting</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>Energy Forecasting</h1>
+      </header>
+
+      <form id="city-form">
+        <label for="city-input">City</label>
+        <input id="city-input" type="text" placeholder="e.g. Lagos, London, Paris, France" autocomplete="off">
+        <button id="search-button" type="submit">Get forecast</button>
+      </form>
+
+      <p id="status" class="note">Loading forecast...</p>
+
+      <section>
+        <h2>Solar Energy Forecast: Next 7 Days</h2>
+        <div class="chart">
+          <canvas id="solar-chart"></canvas>
+        </div>
+      </section>
+
+      <section>
+        <h2>Wind Energy Forecast: Next 7 Days</h2>
+        <div class="chart">
+          <canvas id="wind-chart"></canvas>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
